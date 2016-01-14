@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="supertool" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SuperToolViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2T-7s-LiK">
+                        <rect key="frame" x="39" y="8" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="ufA-oo-37j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="12" image="zhuanfa">
+                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTZ-HA-U5S">
+                        <rect key="frame" x="130" y="8" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="eMW-Ob-A7n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="12344" image="pinglun">
+                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5H-uK-3Ag">
+                        <rect key="frame" x="221" y="8" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="tRM-MI-KGi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="223" image="dianzan">
+                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oTZ-HA-U5S" firstAttribute="leading" secondItem="i2T-7s-LiK" secondAttribute="trailing" constant="31" id="5JB-DQ-UW9"/>
+                    <constraint firstItem="i2T-7s-LiK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="31" id="7I4-HM-apS"/>
+                    <constraint firstItem="oTZ-HA-U5S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="122" id="7OO-kR-LXD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K5H-uK-3Ag" secondAttribute="trailing" constant="31" id="C6T-CK-hcD"/>
+                    <constraint firstItem="i2T-7s-LiK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ca2-QD-CLW"/>
+                    <constraint firstItem="oTZ-HA-U5S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="F8c-96-U12"/>
+                    <constraint firstItem="K5H-uK-3Ag" firstAttribute="leading" secondItem="oTZ-HA-U5S" secondAttribute="trailing" constant="31" id="PBO-dT-OIW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oTZ-HA-U5S" secondAttribute="bottom" id="PEt-2I-5aL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oTZ-HA-U5S" secondAttribute="trailing" constant="122" id="V83-8q-g3a"/>
+                    <constraint firstItem="K5H-uK-3Ag" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="bmF-Ln-8w1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="K5H-uK-3Ag" secondAttribute="bottom" id="eMi-1s-l6M"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="i2T-7s-LiK" secondAttribute="bottom" id="rVg-nH-QTB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pinglun" destination="oTZ-HA-U5S" id="K6X-6A-gpN"/>
+                <outlet property="zan" destination="K5H-uK-3Ag" id="UUA-14-781"/>
+                <outlet property="zhuanfa" destination="i2T-7s-LiK" id="Hdd-hU-vIJ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dianzan" width="24" height="24"/>
+        <image name="pinglun" width="24" height="24"/>
+        <image name="zhuanfa" width="24" height="24"/>
+    </resources>
+</document>
